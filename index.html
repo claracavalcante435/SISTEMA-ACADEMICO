@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Acompanhamento Acadêmico</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Acompanhamento Acadêmico</h1>
+
+        <form id="form-aluno">
+
+            <label for="nome">Nome do aluno:</label>
+            <input type="text" id="nome" placeholder="Digite o nome">
+
+            <label for="materia">Nome da matéria:</label>
+            <input type="text" id="materia" placeholder="Digite o nome da matéria">
+            
+            <label for="nota1">Nota 1:</label>  
+            <input type="number" id="nota1" placeholder="0 a 10">
+                
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" placeholder="0 a 10">
+                
+            <label for="nota3">Nota 3:</label>
+            <input type="number" id="nota3" placeholder="0 a 10">
+
+            <label for="nota4">Nota 4:</label>
+            <input type="number" id="nota4" placeholder="0 a 10">
+
+            <button type="button" id="btn-calcular">
+                Calcular Média
+            </button>
+                
+            <div id="resultado"></div>
+                
+        </form>
+    </div>
+
+<div id="popup" class="popup-overlay">
+    <div class="popup-conteudo">
+        <h2>🏆 Parabéns!</h2>
+        <p id="popup-texto"></p>
+        <button type="button" id="btn-fechar">Fechar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Pliant", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    /* céu azul estilo papel de parede do XP */
+    background: linear-gradient(180deg, #245EDC 0%, #5B9BF0 100%);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #F4F8FF;
+    padding: 24px;
+    border: 5px solid #0054E3; /* moldura azul da janela do XP */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35); /* corrigido: rgba sem espaço */
+    width: 350px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #00309C;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+
+    /*Alterações feitas por mim mesmo*/
+    background-color: #FFFFFF;
+    border: 2px solid #7F9DB9; /* borda azul-acinzentada dos campos do XP */
+    /*border-radius: 20px;*/
+}
+
+input:focus {
+    outline: none;
+    border-color: #0054E3;
+    box-shadow: 0 0 4px #3C8CF5;
+}
+
+button {
+    margin-top: 16px;
+    padding: 10px;
+    width: 100%;
+
+    /*Alterações feitas por mim mesmo*/
+    border-radius: 4px;
+    color: #000000;
+    background: linear-gradient(180deg, #FFFFFF 0%, #E3EEFF 100%);
+    border: 2px solid #003C74;
+}
+
+button:hover {
+    background: linear-gradient(180deg, #E8F2FF 0%, #A9CBF7 100%);
+    cursor: pointer;
+}
+
+/* ===== POP-UP ===== */
+.popup-overlay {
+    display: none; /* escondido por padrão */
+    position: fixed;
+    inset: 0; /* cobre a tela inteira */
+    background-color: rgba(0, 30, 90, 0.55);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-overlay.ativo {
+    display: flex; /* aparece quando recebe a classe "ativo" */
+}
+
+.popup-conteudo {
+    background-color: #F4F8FF;
+    padding: 24px;
+    border: 5px solid #0054E3;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    width: 320px;
+    text-align: center;
+}
+
+.popup-conteudo h2 {
+    margin-top: 0;
+    color: #00309C;
+}
+
+#btn-fechar {
+    background: linear-gradient(180deg, #5FA3FF 0%, #0054E3 100%);
+    color: #FFFFFF;
+    border: 2px solid #003C74;
+    font-weight: bold;
+}
+
+#btn-fechar:hover {
+    background: linear-gradient(180deg, #7DB6FF 0%, #1E6FF0 100%);
+}   
